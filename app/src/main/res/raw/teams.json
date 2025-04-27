@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Afghanistan",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Flag_of_Afghanistan_(2013-2021).svg"
+  },
+  {
+    "name": "Australia",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Flag_of_Australia.svg"
+  },
+  {
+    "name": "Bangladesh",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Bangladesh.svg"
+  },
+  {
+    "name": "England",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_England.svg"
+  },
+  {
+    "name": "India",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"
+  },
+  {
+    "name": "New Zealand",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_New_Zealand.svg"
+  },
+  {
+    "name": "Pakistan",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+  },
+  {
+    "name": "South Africa",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_South_Africa.svg"
+  },
+  {
+    "name": "Sri Lanka",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Sri_Lanka.svg"
+  },
+  {
+    "name": "West Indies",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_West_Indies.svg"
+  },
+  {
+    "name": "Zimbabwe",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_Zimbabwe.svg"
+  },
+  {
+    "name": "Ireland",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"
+  }
+]
