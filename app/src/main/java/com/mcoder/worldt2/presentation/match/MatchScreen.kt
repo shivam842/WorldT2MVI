@@ -28,7 +28,7 @@ fun MatchScreen(
 
     val state = viewModel.uiState.collectAsState().value ?: return
 
-    val innings = if (state.isFirstInnings) state.firstInnings else state.secondInnings!!
+    val innings = if (state.isFirstInnings) state.firstInnings else state.secondInnings
 
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),

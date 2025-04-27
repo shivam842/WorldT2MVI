@@ -8,7 +8,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.mcoder.worldt2.domain.model.Team
 import com.mcoder.worldt2.presentation.match.MatchScreen
-import com.mcoder.worldt2.presentation.teamselect.TeamSelectScreen
 import com.mcoder.worldt2.presentation.teamselect.TeamSelectScreenWrapper
 import kotlinx.serialization.json.Json
 

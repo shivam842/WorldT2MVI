@@ -19,10 +19,6 @@ class TeamSelectViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(TeamSelectUiState())
     val uiState: StateFlow<TeamSelectUiState> = _uiState
 
-    /*init {
-
-    }*/
-
     private fun loadTeams() {
         viewModelScope.launch {
             try {
@@ -44,15 +40,18 @@ class TeamSelectViewModel @Inject constructor(
 
     private fun toggleTeam(team: Team) {
         val current = _uiState.value.selectedTeams
+        Log.w("[qwerty]", "toggleTeam: team = $team" )
+        Log.w("[qwerty]", "toggleTeam: [1] = ${current?.first ?: "null"} | [2] = ${current?.second ?: "null"}" )
 
         val newSelection = when {
             current == null -> Pair(team, team) // initial state, both teams same temporarily
-            current.first == team -> null // deselect
-            current.second == team -> null // deselect
+            current.first == team -> Pair(null, team) // deselect
+            current.second == team -> Pair(team, null) // deselect
             current.first == current.second -> Pair(current.first, team) // fill second team
             else -> Pair(current.second, team) // replace first with second, add new one
         }
 
+        Log.w("[qwerty]", "toggleTeam: newSelection = [1]: ${newSelection.first ?: "null"} | [2]: ${newSelection.second ?: "null"}" )
         _uiState.value = _uiState.value.copy(selectedTeams = newSelection)
     }
 }

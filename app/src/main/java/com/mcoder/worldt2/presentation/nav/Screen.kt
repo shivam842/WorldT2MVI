@@ -4,8 +4,8 @@ import com.mcoder.worldt2.domain.model.Team
 import kotlinx.serialization.json.Json
 
 sealed class Screen(val route: String) {
-    object TeamSelect : Screen("team_select")
-    object Match : Screen("match?team1={team1}&team2={team2}") {
+    data object TeamSelect : Screen("team_select")
+    data object Match : Screen("match?team1={team1}&team2={team2}") {
         fun passArgs(team1: Team, team2: Team): String {
             val t1 = Json.encodeToString(team1)
             val t2 = Json.encodeToString(team2)
